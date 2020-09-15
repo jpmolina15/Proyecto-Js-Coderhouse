@@ -14,7 +14,7 @@
   grid-column-gap: 10px;
 }
 .product {
-  padding: 10px 5px;
+  /* padding: 10px 5px; */
   text-align: center;
   border: 1px solid black;
   box-sizing: border-box;
@@ -37,7 +37,8 @@
 .product:hover img {
   filter: opacity(0.7);
 }
-.product:hover .title, 
+.product:hover .title,
 .product:hover .precio {
   color: white;
+  transition: 2s ease-in-out;
 }
