@@ -10,12 +10,30 @@ const precioTotal = (producto1, producto2, producto3) => {
 
 const productos = [{
     nombre: "Camiseta de Boca",
-    precio: camisetaPrecio
+    precio: camisetaPrecio,
+    marca: "Adidas",
+    rubro: "Fútbol",
+    tipo: "Camiseta"
 }, {
     nombre: "Campera de Boca",
-    precio: camperaPrecio
+    precio: camperaPrecio,
+    marca: "Adidas",
+    rubro: "Casual",
+    tipo: "Campera"
 },
 {
-    nombre: "Zapatillas",
-    precio: zapasPrecio
+    nombre: "Zapatillas de Correr",
+    precio: zapasPrecio,
+    marca: "Adidas",
+    rubro: "Running",
+    tipo: "Zapatillas"
 }]
+
+let carrito = ["Camiseta de Boca", "Campera de Boca"]
+carrito.push("zapatillas")
+let carritoAnterior = ["botines", "pelota"]
+
+let nuevoCarrito = carrito.concat(carritoAnterior)
+
+console.log(carrito)
+console.log(nuevoCarrito)
