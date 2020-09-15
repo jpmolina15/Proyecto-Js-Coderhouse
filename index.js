@@ -1,6 +1,6 @@
-const camisetaPrecio = 5600;
-const camperaPrecio = 4500;
-const zapasPrecio = 5000;
+let camisetaPrecio = 5600;
+let camperaPrecio = 4500;
+let zapasPrecio = 5000;
 
 let precio = null
 

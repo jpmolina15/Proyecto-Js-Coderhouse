@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 .catalogo {
-  margin-top: 15px;
+  margin: 45px;
+  
   max-width: 90%;
   align-content: center;
 }
@@ -14,7 +15,7 @@
   grid-column-gap: 10px;
 }
 .product {
-  /* padding: 10px 5px; */
+  padding: 3px;
   text-align: center;
   border: 1px solid black;
   box-sizing: border-box;
@@ -28,7 +29,9 @@
   margin-bottom: 0;
   font-weight: regular;
 }
-
+.precio {
+  margin-bottom: 0;
+}
 .product:hover {
   transform: scale(1.2);
   background-color: #78858c;
@@ -41,4 +44,11 @@
 .product:hover .precio {
   color: white;
   transition: 2s ease-in-out;
+}
+
+.agregar {
+  margin-top: 5px;
+}
+.cantidad {
+  margin-top: 2px;
 }
