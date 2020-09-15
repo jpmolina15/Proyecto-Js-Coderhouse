@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.catalogo {
+  margin-top: 15px;
+  max-width: 90%;
+  align-content: center;
+}
+.productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+.product {
+  padding: 10px 5px;
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.title {
+  margin-top: 0;
+  color: #1e1e1e;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 0;
+  font-weight: regular;
+}
+
+.product:hover {
+  transform: scale(1.2);
+  background-color: #78858c;
+  transition: 2s ease-in-out;
+}
+.product:hover img {
+  filter: opacity(0.7);
+}
+.product:hover .title, 
+.product:hover .precio {
+  color: white;
+}

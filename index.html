@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <!-- Navbar content -->
+            <a class="navbar-brand">Tienda de Ropa Deportiva</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <div>
+        <div class="row container  catalogo">
+            <div class="col">
+                <h2>Filtros</h2>
+                <form>
+                    <div class="form-group">
+                        <h4>Tipo de Indumentaria</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Camiseta">
+                            <label class="form-check-label" for="camiseta">
+                                Camiseta
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="zapatillas">
+                            <label class="form-check-label" for="zapatillas">
+                                Botines
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="buzo">
+                            <label class="form-check-label" for="buzo">
+                                Buzo
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h4>Rubro</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="running">
+                            <label class="form-check-label" for="running">
+                                Running
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="futbol">
+                            <label class="form-check-label" for="futbol">
+                                Fútbol
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="casual">
+                            <label class="form-check-label" for="casual">
+                                Casual
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <h2>Productos</h2>
+                <div class="productos">
+                    <article class="product">
+                        <img src="./camisetaBoca.jpg" alt="logo" class="img-thumbnail" />
+                        <p class="title">Camiseta de Boca</p>
+                        <p class="precio">
+                            $5600
+                        </p>
+                    </article>
+                    <article class="product">
+                        <img src="./zapatillas.png" alt="logo" class="img-thumbnail" />
+                        <p class=" title">Zapatillas para Running</p>
+                        <p class="precio">
+                            $5000
+                        </p>
+                    </article>
+                    <article class="product">
+                        <img src="./camperaBoca.jpg" alt="logo" class="img-thumbnail" />
+                        <p class=" title"> Campera de Boca</p>
+                        <p class="precio">
+                            $4500
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Carrito</h2>
+                <h5>Productos Seleccionados</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Precio</th>
+                            </tr>
+                        </thead>
+                        <!-- <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody> -->
+                    </table>
+                    <h5>Precio Total:</h5>
+                    <p>$</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
