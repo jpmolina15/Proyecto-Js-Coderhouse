@@ -24,8 +24,8 @@
     </header>
 
     <div >
-        <div class="row container  catalogo">
-            <div class="col"> <!-- Filtros-->
+        <div id="catalogo" class="row container catalogo">
+            <div id="filtros" class="col"> <!-- Filtros-->
                 <h2>Filtros</h2>
                 <form>
                     <div class="form-group">
@@ -72,7 +72,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-6"> <!-- Productos-->
+            <div id="productos" class="col-6"> <!-- Productos-->
                 <h2>Productos</h2>
                 <div class="productos">
                     <article class="product">
@@ -91,7 +91,7 @@
                                 <option>3</option>
                                 <option>4</option>
                             </select>
-                            <button type="button" class="btn btn-success agregar">Agregar al carrito</button>
+                            <input type="submit" class="btn btn-success agregar">Agregar al carrito</button>
                         </div>
                     </article>
                     <article class="product">
@@ -135,7 +135,7 @@
                     </article>
                 </div>
             </div>
-            <div class="col"> <!-- Carrito-->
+            <div id="carrito" class="col"> <!-- Carrito-->
                 <h2>Carrito</h2>
                 <h5>Productos Seleccionados</h4>
                     <table class="table">
