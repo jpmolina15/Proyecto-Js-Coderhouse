@@ -72,7 +72,7 @@
                     </div>
                 </form>
             </div>
-            <div id="productos" class="col-6"> <!-- Productos-->
+            <div id="productos" class="col-6 caca"> <!-- Productos-->
                 <h2>Productos</h2>
                 <div class="productos">
                     <article class="product">
@@ -84,14 +84,8 @@
                         <!-- Cantidad pedida -->
                         <div class="form-group container cantidad">
                             <label for="cantidadProductos">Cantidad</label>
-                            <select class="form-control" id="cantidadProductos">
-                                <option>0</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
-                            <input type="submit" class="btn btn-success agregar">Agregar al carrito</button>
+                            <input type="number" name="cantidadProductos" value="0" id="casaca1">
+                            <button type="button" class="btn btn-success agregar">Agregar al carrito</button>
                         </div>
                     </article>
                     <article class="product">
@@ -103,13 +97,7 @@
                         <!-- Cantidad pedida -->
                         <div class="form-group container cantidad">
                             <label for="cantidadProductos">Cantidad</label>
-                            <select class="form-control" id="cantidadProductos">
-                                <option>0</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
+                            <input type="number" name="cantidadProductos" value="1" id="casaca2">
                             <button type="button" class="btn btn-success agregar">Agregar al carrito</button>
                         </div>
 
@@ -123,13 +111,7 @@
                         <!-- Cantidad pedida -->
                         <div class="form-group container cantidad">
                             <label for="cantidadProductos">Cantidad</label>
-                            <select class="form-control" id="cantidadProductos">
-                                <option>0</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
+                            <input type="number" name="cantidadProductos" value="0" id="casaca3">
                             <button type="button" class="btn btn-success agregar">Agregar al carrito</button>
                         </div>
                     </article>
@@ -138,7 +120,7 @@
             <div id="carrito" class="col"> <!-- Carrito-->
                 <h2>Carrito</h2>
                 <h5>Productos Seleccionados</h4>
-                    <table class="table">
+                    <table class="table" id="tablaCarrito">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
