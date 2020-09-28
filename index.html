@@ -72,7 +72,7 @@
                     </div>
                 </form>
             </div>
-            <div id="productos" class="col-6 caca"> <!-- Productos-->
+            <div id="productos" class="col-6"> <!-- Productos-->
                 <h2>Productos</h2>
                 <div class="productos">
                     <article class="product">
@@ -84,7 +84,7 @@
                         <!-- Cantidad pedida -->
                         <div class="form-group container cantidad">
                             <label for="cantidadProductos">Cantidad</label>
-                            <input type="number" name="cantidadProductos" value="0" id="casaca1">
+                            <input type="number" name="cantidadProductos" value="2" id="casaca1">
                             <button type="button" class="btn btn-success agregar">Agregar al carrito</button>
                         </div>
                     </article>
@@ -120,38 +120,23 @@
             <div id="carrito" class="col"> <!-- Carrito-->
                 <h2>Carrito</h2>
                 <h5>Productos Seleccionados</h4>
-                    <table class="table" id="tablaCarrito">
+
+                    <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
                                 <th scope="col">Producto</th>
                                 <th scope="col">Cantidad</th>
                                 <th scope="col">Precio</th>
                             </tr>
                         </thead>
-                        <!-- <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody> -->
+                        <tbody  id="tablaCarrito">
+
+                        </tbody>
                     </table>
-                    <h5>Precio Total:</h5>
-                    <p>$</p>
+                    <div id="final" class="precioTotal">
+                    <p>Precio Total:<p>
+
+                </div>
             </div>
         </div>
 
