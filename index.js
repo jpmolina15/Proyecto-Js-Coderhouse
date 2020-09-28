@@ -2,8 +2,7 @@ let camisetaPrecio = 5600;
 let camperaPrecio = 4500;
 let zapasPrecio = 5000;
 
-let precio = null
-
+let precioFinal = []
 
 const productos = [{
     id: 1,
@@ -36,7 +35,7 @@ const productos = [{
 
 const agregarCarrito = () => {
     var table = document.querySelector("#tablaCarrito");
-    let precioFinal = []
+
     for (let i = 0; i < productos.length; i++) {
         // Info del producto
         const index = productos[i].id;
@@ -74,16 +73,9 @@ const agregarCarrito = () => {
             table.appendChild(hilera);
         }
     }
-
-
     // Precio Final Calculo
     let total = precioFinal.reduce((a, b) => a + b, 0);
     document.querySelector('#final').textContent = '$' + total
-
-
-
-
-
 }
 
 agregarCarrito()
