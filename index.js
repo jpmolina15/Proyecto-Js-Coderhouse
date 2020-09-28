@@ -32,11 +32,11 @@ const productos = [{
     cantidad: 0
 }]
 
-let precios = []
+
 
 const agregarCarrito = () => {
     var table = document.querySelector("#tablaCarrito");
-    
+    let precioFinal = []
     for (let i = 0; i < productos.length; i++) {
         // Info del producto
         const index = productos[i].id;
@@ -45,7 +45,7 @@ const agregarCarrito = () => {
         const precio = productos[i].precio * cantidad
 
         //  Agrega a los precios
-        precios.push(precio)
+        precioFinal.push(precio)
 
         // Local Storage de productos elegidos
         localStorage.setItem('producto' + i, JSON.stringify(productos[i]))
@@ -75,12 +75,12 @@ const agregarCarrito = () => {
         }
     }
 
-    // Precio Final Calculo
-    let total = precios.reduce((a, b) => a + b, 0);
-    const cuenta = document.querySelector('#final')
-    const monto = document.createTextNode('$' + total)
 
-    cuenta.appendChild(monto)
+    // Precio Final Calculo
+    let total = precioFinal.reduce((a, b) => a + b, 0);
+    document.querySelector('#final').textContent = '$' + total
+
+
 
 
 
