@@ -88,8 +88,9 @@ const agregarCarrito = () => {
     let total = precioFinal.reduce((a, b) => a + b, 0);
     document.querySelector('#final').textContent = '$' + total
 }
+
+// Boton Agregar al carrito
 for (let i = 0; i < productos.length; i++) {
-    // Info del producto
     const index = productos[i].id;
     document.querySelector("#btn" + index).onclick = agregarCarrito
 }
