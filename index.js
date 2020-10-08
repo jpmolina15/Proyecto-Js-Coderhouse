@@ -36,30 +36,34 @@ const productos = [{
 const agregarCarrito = () => {
     const table = document.querySelector("#tablaCarrito");
     let precioFinal = []
+    sessionStorage.clear()
+
     for (let i = 0; i < productos.length; i++) {
         // Info del producto
         const index = productos[i].id;
         const nombre = productos[i].nombre;
         const cantidad = document.querySelector('#producto' + index).value;
         const precio = productos[i].precio * cantidad
+
+
         //  Agrega a los precios
         precioFinal.push(precio)
-
-        // Local Storage de productos elegidos
-        localStorage.setItem('producto' + i, JSON.stringify(productos[i]))
-
-
 
         // Limpia carrito
         if (cantidad >= 0) {
             if (document.querySelector('.hilera' + index)) {
                 const fila = document.querySelector('.hilera' + index)
                 fila.parentNode.removeChild(fila)
+                
             }
         }
 
         //Agrega carrito
         if (cantidad >= 1) {
+
+            // Sesion Storage de productos elegidos
+            sessionStorage.setItem('producto' + i, JSON.stringify(productos[i]))
+
             var hilera = document.createElement("tr");
             hilera.classList.add('hilera' + index)
 
@@ -86,13 +90,21 @@ const agregarCarrito = () => {
 
     // Precio Final Calculo
     let total = precioFinal.reduce((a, b) => a + b, 0);
-    document.querySelector('#final').textContent = '$' + total
+    $('#final').text('$' + total) 
 }
 
 // Boton Agregar al carrito
 for (let i = 0; i < productos.length; i++) {
     const index = productos[i].id;
-    document.querySelector("#btn" + index).onclick = agregarCarrito
+    $("#btn" + index).click(()=>{
+        agregarCarrito()
+    })
 }
 
+$("#futbol").click(() => {
+    console.log('saaaa')
+})
 
+$(document).ready(
+    console.log('boquita')
+)
